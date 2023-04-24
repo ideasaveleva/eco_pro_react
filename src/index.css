@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Steppe';
+  src: src('\static\fonts\Steppe.woff') format('woff'); /* все современные браузеры, IE9+ */
+}
+/* p {font-family: "Steppe-Regular", Arial, sans-serif; } */
+@font-face {
+  font-family: 'GothamProLight';
+  src: src('\static\fonts\GothamProLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'GothamProBold';
+  src: src('\static\fonts\GothamProBold.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  min-width: 1920px;
+
+  margin: 0;
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif; */
+  font-family: 'Steppe', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 992px) {
+  body {
+    min-width: 768px;
+  }
+	.container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+	body {
+    min-width: 390px;
+  }
+	.container {
+    max-width: 750px;
+  }
+}
