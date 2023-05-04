@@ -5,7 +5,6 @@ import { Wrapper } from './NavBar/styles.jsx'
 export const Layout = ({ children }) => {
   return (
     <Wrapper>
-      {/* <Header /> */}
       {children}
       <Footer />
     </Wrapper>

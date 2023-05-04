@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  /* min-height: 800px; */
+  background-image: url('/static/img/mask-group.png');
+
+  @media (max-width: 570px) {
+    background-image: url('/static/img/mask-group-medium.png');
+  }
 `
 export const BoxContent = styled.div`
   padding-bottom: 100px;

@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 export const HeaderBox = styled.header`
   z-index: 1;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 
   @media (max-width: 992px) {
-    margin-bottom: 40px;
   }
 
   display: flex;

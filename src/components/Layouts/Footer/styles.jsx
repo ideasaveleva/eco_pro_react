@@ -8,17 +8,17 @@ export const Wrapper = styled.footer`
   line-height: 25px;
   padding: 97px 0;
   line-height: 40px;
-  margin-top: 114px;
+  /* margin-top: 70px; */
 
   @media (max-width: 992px) {
     line-height: 20px;
     padding: 73px 0 63px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   @media (max-width: 767px) {
     line-height: 16px;
     padding: 83px 0 63px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 `
 

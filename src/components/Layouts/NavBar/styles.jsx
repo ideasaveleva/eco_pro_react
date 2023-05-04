@@ -11,31 +11,29 @@ export const LinkBox = styled.nav`
   left: 0;
   width: 100%;
   align-items: center;
-  padding: 157px 0 165px;
+  padding: 64px 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  font-size: 60px;
+  gap: 15px;
+  font-size: 30px;
 
   @media (max-width: 992px) {
     font-size: 24px;
-    gap: 30px;
-    padding: 51px 0 52px;
+    padding: 50px 0;
   }
   @media (max-width: 767px) {
     font-size: 16px;
     gap: 10px;
-    padding: 47px 0;
   }
 `
 export const Image = styled.img`
-  width: 59px;
-	
+  max-width: 20px;
+
   @media (max-width: 992px) {
-    width: 30px;
+    
   }
   @media (max-width: 767px) {
-    width: 18px;
+    max-width: 18px;
   }
 `
 export const WrapLinkList = styled.div`
