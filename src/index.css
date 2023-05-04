@@ -3,24 +3,17 @@
   src: src('\static\fonts\Steppe.woff') format('woff'); /* все современные браузеры, IE9+ */
 }
 /* p {font-family: "Steppe-Regular", Arial, sans-serif; } */
-@font-face {
-  font-family: 'GothamProLight';
-  src: src('\static\fonts\GothamProLight.woff') format('woff');
-}
-@font-face {
-  font-family: 'GothamProBold';
-  src: src('\static\fonts\GothamProBold.woff') format('woff');
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
-  min-width: 1920px;
+  /* min-width: 1920px; */
+  min-width: 1470px;
 
   margin: 0;
   /* font-family: 'Inter', sans-serif;
