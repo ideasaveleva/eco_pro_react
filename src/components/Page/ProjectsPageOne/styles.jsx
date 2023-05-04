@@ -228,11 +228,14 @@ export const MainBox = styled.main`
   gap: 30px;
   font-size: 20px;
   line-height: 25px;
+  margin-bottom: 60px;
 
   @media (max-width: 992px) {
     flex-direction: column;
+    margin-bottom: 50px;
   }
   @media (max-width: 767px) {
+    margin-bottom: 30px;
   }
 `
 

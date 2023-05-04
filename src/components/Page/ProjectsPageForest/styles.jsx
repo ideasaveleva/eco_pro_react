@@ -103,14 +103,14 @@ export const PhotoContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  padding-top: 60px;
+  padding: 60px 0;
 
   @media (max-width: 992px) {
-    padding-top: 50px;
+    padding: 50px 0;
     gap: 20px;
   }
   @media (max-width: 767px) {
-    padding-top: 20px;
+    padding: 20px 0;
   }
 `
 
