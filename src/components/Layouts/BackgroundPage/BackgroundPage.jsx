@@ -1,8 +1,11 @@
-import { Wrapper, BoxContent, } from './styles.jsx'
+import { BoxContent, Wrapper } from './styles.jsx'
 
-export const BackgroundPage = ({ children, style }) => {
-	return (
-    <Wrapper style={style}>
+export const BackgroundPage = ({ children, style, media }) => {
+  return (
+    <Wrapper style={style} media={media}>
       <BoxContent>{children}</BoxContent>
     </Wrapper>
-  )}
+
+    // backgroundImage: `url(/static/img/ongoing-back.png)`,
+  )
+}

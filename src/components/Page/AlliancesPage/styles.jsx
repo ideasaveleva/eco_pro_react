@@ -123,17 +123,17 @@ export const PostersContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 75px;
+  margin: 75px 0;
   column-gap: 30px;
   row-gap: 35px;
 
   @media (max-width: 992px) {
-    margin-top: 30px;
+    margin: 30px 0;
     column-gap: 50px;
     row-gap: 25px;
   }
   @media (max-width: 767px) {
-    margin-top: 46px;
+    margin: 46px 0;
     row-gap: 30px;
     column-gap: 0;
   }

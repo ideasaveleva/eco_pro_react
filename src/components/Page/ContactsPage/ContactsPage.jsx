@@ -15,6 +15,7 @@ export const ContactsPage = () => {
     <div>
       <BackgroundPage
         style={{
+          backgroundImage: `none`,
           backgroundColor: '#5DA104',
         }}
       >
@@ -48,7 +49,7 @@ export const ContactsPage = () => {
             </LinkBox>
 
             <FeedbackForm
-              style={{ textAlign: 'start' }}
+              style={{ textAlign: 'start', maxWidth: '460px' }}
               styleTitle={{ color: '#FFF' }}
               styleBtn={{
                 backgroundColor: '#fff',

@@ -3,7 +3,6 @@ import { Button } from '../../Elements/Button/Button.jsx'
 import { FeedbackForm } from '../../Form/FeedbackForm.jsx'
 import { BackgroundPage } from '../../Layouts/BackgroundPage/BackgroundPage.jsx'
 import { Header } from '../../Layouts/Header/Header.jsx'
-import { IconsList } from '../../List/IconsList/IconsList.jsx'
 import {
   BtnMediaNone,
   Card,
@@ -193,10 +192,10 @@ export const AboutPage = () => {
         </PhotoContainer>
       </div>
 
-      <IconsList />
+      {/* <IconsList /> */}
 
       <div className='container'>
-        <FeedbackForm style={{ margin: '0px auto' }}>WRITE TO US</FeedbackForm>
+				<FeedbackForm style={{ margin: '20px auto 50px', maxWidth: '500px' }}>WRITE TO US</FeedbackForm>
       </div>
     </div>
   )

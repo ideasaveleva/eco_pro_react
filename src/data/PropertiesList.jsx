@@ -65,7 +65,7 @@ export const aboutCompany = {
         id: 2,
         name: 'Mavi Haime',
         role: 'CEO Green Miami Events',
-        src: '/static/img/about-team2-media1.png',
+        src: '/static/img/about-team2.png',
       },
       {
         id: 3,
@@ -89,7 +89,7 @@ export const aboutCompany = {
         id: 6,
         name: 'Vitaly Bobrov',
         role: 'Video Editor',
-        src: '/static/img/about-team6-media.png',
+        src: '/static/img/about-team6.png',
       },
       {
         id: 7,

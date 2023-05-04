@@ -1,11 +1,10 @@
-          import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { aboutCompany } from '../../../data/PropertiesList.jsx'
 import { PropertiesBigCard } from '../../Card/PropertiesBigCard/PropertiesBigCard.jsx'
 import { FeedbackForm } from '../../Form/FeedbackForm.jsx'
 import { BackgroundPage } from '../../Layouts/BackgroundPage/BackgroundPage.jsx'
 import { Header } from '../../Layouts/Header/Header.jsx'
 import { AlliancesList } from '../../List/AlliancesList/AlliancesList.jsx'
-import { IconsList } from '../../List/IconsList/IconsList.jsx'
 import {
   BtnIconBox,
   IconBox,
@@ -28,8 +27,9 @@ export const HomePage = () => {
     <div>
       <BackgroundPage
         style={{
-          backgroundImage: `url(/static/img/mask-group.png)`,
+          // backgroundImage: `url(/static/img/mask-group.png)`,
           overflow: 'hidden',
+          backgroundSize: '100% 100%',
         }}
       >
         <div className='container'>
@@ -38,8 +38,6 @@ export const HomePage = () => {
           <PropertiesBigCard
             style={{
               color: 'white',
-              lineHeight: '25px',
-              padding: '100px 0',
             }}
             titleStyle={{
               color: '#fff',
@@ -51,7 +49,7 @@ export const HomePage = () => {
         </div>
       </BackgroundPage>
 
-      <IconsList />
+      {/* <IconsList /> */}
 
       <div className='container'>
         <Wrapper>
@@ -87,49 +85,12 @@ export const HomePage = () => {
                 </div>
               </ImageBox>
             </IconBox>
-            {/* <BlockContainerImage>
-              <div>
-                <ImageXl src='/static/img/vera-logo.png' />
-              </div>
-              <div>
-                <ImageL src='/static/img/vera-logo-horiz.png' />
-              </div>
-              <div>
-                <ImageBox
-                  style={{ marginBottom: '15px' }}
-                  src='/static/img/oleta.png'
-                  alt=''
-                />
-              </div>
-              <div>
-                <ImageBox src='/static/img/mortgage.png' alt='' />
-              </div>
-            </BlockContainerImage> */}
           </BtnIconBox>
         </Wrapper>
 
-        {/* <PropertiesBigCard
-          titleStyle={{
-            color: '#5DA104',
-            fontSize: '40px',
-            lineHeight: '40px',
-            fontFamily: 'Days One',
-          }}
-          firstParagraph={homeTwo.textOne}
-          secondParagraph={homeTwo.textTwo}
-          title={homeTwo.title}
-          block={true}
-				/> */}
-
         <PropertiesBigCard
-          style={{ paddingTop: '40px' }}
-          titleStyle={{
-            marginBottom: '40px',
-            color: '#5DA104',
-            fontSize: '40px',
-            lineHeight: '40px',
-            fontFamily: 'Days One',
-          }}
+          titleStyleCustom='title-style-custom'
+          styleText={{ margin: 0 }}
           firstParagraph={homeThree.textOne}
           title={homeThree.title}
           src={homeThree.src}
@@ -141,25 +102,16 @@ export const HomePage = () => {
       <ImageBackground>
         <div className='container'>
           <PropertiesBigCard
-            style={{
-              paddingTop: '130px',
-            }}
             titleStyle={{
               color: '#09570C',
-              fontSize: '60px',
-              lineHeight: '60px',
               fontFamily: 'Days One',
-              marginBottom: '43px',
             }}
             firstParagraph={homeFour.textOne}
             title={homeFour.title}
             textBtnOne={homeFour.btnOne}
             btnStyle={{
               backgroundColor: '#09570C',
-              fontSize: '20px',
-              padding: '20px 45px',
-              borderRadius: '10px',
-              marginTop: '43px',
+              margin: '30px 0 10px',
             }}
           />
         </div>
@@ -172,10 +124,16 @@ export const HomePage = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
-          padding: '100px 0',
+          padding: '50px 0',
         }}
       >
-        <FeedbackForm>WRITE TO US</FeedbackForm>
+        <FeedbackForm
+          style={{
+            minWidth: '255px',
+          }}
+        >
+          WRITE TO US
+        </FeedbackForm>
       </div>
     </div>
   )
