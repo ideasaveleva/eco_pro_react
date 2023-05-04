@@ -23,21 +23,24 @@ export const Text = styled.p`
   font-weight: 300;
   line-height: 25px;
   font-size: 20px;
+  /* max-width: 600px; */
 
   @media (max-width: 992px) {
     font-size: 12px;
     line-height: 18px;
-    max-width: 600px;
+    max-width: 450px;
   }
   @media (max-width: 767px) {
-    max-width: 555px;
+    max-width: 266px;
   }
 `
 
 export const ImageContainer = styled.div`
-
   @media (max-width: 992px) {
-		margin-top: 50px;
+    margin-top: 50px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
   }
 `
 
@@ -48,14 +51,17 @@ export const Image = styled.img`
 `
 
 export const Title = styled.h1`
+  max-width: 447px;
   margin-bottom: 34px;
   font-size: 60px;
 
   @media (max-width: 992px) {
+    max-width: 270px;
     font-size: 36px;
     margin-bottom: 15px;
   }
   @media (max-width: 767px) {
+    max-width: 178px;
     font-size: 24px;
     margin-bottom: 0px;
   }
@@ -64,4 +70,29 @@ export const Title = styled.h1`
 export const Icon = styled.img`
   max-height: 142px;
   margin-left: 20px;
+
+  @media (max-width: 992px) {
+    max-height: 82px;
+  }
+  @media (max-width: 767px) {
+		display: none;
+  }
+`
+
+export const TextIcon = styled.p`
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 20px;
+  max-width: 600px;
+
+  @media (max-width: 992px) {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 410px;
+    padding-top: 24px;
+  }
+  @media (max-width: 767px) {
+    /* max-width: 555px; */
+    padding-top: 0;
+  }
 `

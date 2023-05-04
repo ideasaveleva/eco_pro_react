@@ -7,6 +7,7 @@ import {
   Text,
   Title,
   Wrapper,
+  TextIcon,
 } from './styles.jsx'
 
 export const PropertiesBigCard = ({
@@ -22,15 +23,21 @@ export const PropertiesBigCard = ({
   icon,
   srcIcon,
   styleBox,
+	titleStyleCustom,
+	styleText,
 }) => {
   return (
     <Wrapper style={style}>
       <InfoBox style={styleBox}>
-        <Title style={titleStyle}>{title}</Title>
+        {titleStyleCustom ? (
+          <h2 className={titleStyleCustom}>{title}</h2>
+        ) : (
+          <Title style={titleStyle}>{title}</Title>
+        )}
 
         {firstParagraph && icon ? (
           <div style={{ display: 'flex' }}>
-            <Text>{firstParagraph}</Text>
+            <TextIcon style={styleText}>{firstParagraph}</TextIcon>
             <Icon src={srcIcon} />
           </div>
         ) : (
@@ -40,7 +47,7 @@ export const PropertiesBigCard = ({
         {secondParagraph && <Text>{secondParagraph}</Text>}
 
         {textBtnOne && (
-          <Button start={false} style={(btnStyle)}>
+          <Button start={false} style={btnStyle}>
             {textBtnOne}
           </Button>
         )}
